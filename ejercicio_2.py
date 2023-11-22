@@ -13,7 +13,7 @@
 #SOLUCION:
 
 # 1. Para este caso lo tomamos como 2 triangulos uno de altura 5 y otro de altura 4.
-# 2. Imprimir la figura del triangulo()
+# 2. Imprimir la figura del triangul0
 
 # Número de filas para la mitad superior
 altura_superior = 5
