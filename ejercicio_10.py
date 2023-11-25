@@ -35,21 +35,17 @@ def convertir_fecha(fecha):
     if "/" in fecha:
         partes = fecha.split("/")
         mes, dia, anio = partes
-    else:
-        partes = fecha.split(" ")
-        mes, dia, anio = partes[0], partes[1].strip(','), partes[2]
 
-    # Obtener el número del mes 
     numero_mes = obtener_numero_mes(mes)
 
     # FORMATO la fecha en AAAA-MM-DD
-    fecha_formateada = f"{anio}-{numero_mes:02d}-{int(dia):02d}"
+    fecha_formateada = f"{anio}-{numero_mes:d}-{int(dia):2d}"
 
     return fecha_formateada
 
 fecha_ingresada = input("Ingrese una fecha (en formato mes-día-año o Mes día, año): ")
 
-# mostrar la fecha en formato AAAA-MM-DD
+
 fecha_convertida = convertir_fecha(fecha_ingresada)
 print(f"Fecha en formato AAAA-MM-DD: {fecha_convertida}")
 
